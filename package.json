@@ -1,0 +1,26 @@
+{
+  "name": "matrix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-user": "cd user && npm install && cd ..",
+    "install-admin": "cd admin && npm install && cd ..",
+    "install-server": "cd server && npm install && cd ..",
+    "install": "npm run install-admin && npm run install-user && npm run install-server",
+    "build-admin": "cd admin && npm run build && cd ..",
+    "build": "npm run build-admin",
+    "start-server": "cd server && npm start && cd ..",
+    "start": "npm run start-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bretrobinson/Matrix.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bretrobinson/Matrix/issues"
+  },
+  "homepage": "https://github.com/bretrobinson/Matrix#readme"
+}
